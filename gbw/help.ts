@@ -21,8 +21,8 @@ export const generateHelpBlob = (): string => {
     
     Commands: 
     ${cmds}
-        For the compare command, use ' to denote the two expressions to compare.
-        the first expression is what all following expressions are matched against.
+        For the "compare" and the "table" command, use '<expr>' to denote the expressions to compare or generate tables for.
+        The compare command will test all following expressions agains the first.
 
     Accepted Operands:
     ${operands}
