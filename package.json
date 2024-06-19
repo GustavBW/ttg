@@ -1,0 +1,16 @@
+{
+  "name": "ttg",
+  "module": "ttg",
+  "type": "module",
+  "outdir": "dist",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "build": "tsc && bun build index.ts --outfile ./dist/ttg.js",
+    "test": "bun run build && node ./dist/ttg.js table 'a and b' 'a or b'"
+  }
+}
